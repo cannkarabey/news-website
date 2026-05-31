@@ -59,7 +59,19 @@
   var textEl = document.getElementById('articleText');
   if (textEl && article.body) {
     textEl.innerHTML = article.body
-      .map(function (para) { return '<p>' + para + '</p>'; })
+      .map(function (item) {
+        /* Görsel bloğu: { img: '...', caption: '...' } */
+        if (item && typeof item === 'object' && item.img) {
+          return (
+            '<figure class="article-figure">' +
+              '<img src="' + item.img + '" alt="' + (item.caption || article.title) + '" loading="lazy">' +
+              (item.caption ? '<figcaption>' + item.caption + '</figcaption>' : '') +
+            '</figure>'
+          );
+        }
+        /* Düz paragraf */
+        return '<p>' + item + '</p>';
+      })
       .join('');
   }
 

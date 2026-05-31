@@ -1,0 +1,167 @@
+/* iletisim.css — İletişim sayfası */
+
+.header-link { display: block; }
+
+/* ── Hero ── */
+.contact-hero {
+  background: var(--off-white);
+  border-bottom: 1px solid var(--border);
+  padding: 3.5rem 1.25rem 3rem;
+  text-align: center;
+}
+.contact-label {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--accent-alt);
+  margin-bottom: 0.8rem;
+}
+.contact-title {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--black);
+  line-height: 1.15;
+  margin-bottom: 0.9rem;
+}
+.contact-sub {
+  font-family: var(--sans);
+  font-size: 1rem;
+  color: var(--muted);
+  max-width: 540px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ── İçerik düzeni ── */
+.contact-section { padding: 3.5rem 0 4.5rem; }
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* ── Form ── */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.3rem;
+}
+.form-field { display: flex; flex-direction: column; gap: 0.4rem; }
+.form-field label {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+.form-field input,
+.form-field textarea {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  color: var(--black);
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.8rem 0.9rem;
+  transition: border-color var(--ease), box-shadow var(--ease);
+  width: 100%;
+}
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(75, 0, 130, 0.1);
+}
+.form-field textarea { resize: vertical; min-height: 150px; }
+
+.form-field.invalid input,
+.form-field.invalid textarea { border-color: var(--accent-alt); }
+.form-error {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  color: var(--accent-alt);
+  display: none;
+}
+.form-field.invalid .form-error { display: block; }
+
+.contact-submit {
+  align-self: flex-start;
+  background: var(--accent);
+  color: var(--white);
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 6px;
+  padding: 0.95rem 2.2rem;
+  cursor: pointer;
+  transition: background var(--ease), transform 0.15s;
+}
+.contact-submit:hover { background: #3a006b; transform: translateY(-1px); }
+
+/* ── Başarı mesajı ── */
+.form-success {
+  display: none;
+  background: #f5f0ff;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 1.4rem 1.6rem;
+  font-family: var(--sans);
+  color: var(--accent);
+  line-height: 1.6;
+}
+.form-success.show { display: block; }
+.form-success strong { display: block; font-size: 1.05rem; margin-bottom: 0.3rem; }
+
+/* ── İletişim bilgileri ── */
+.contact-info {
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 2rem 1.8rem;
+}
+.contact-info h2 {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  color: var(--black);
+  margin-bottom: 1.4rem;
+}
+.info-item { margin-bottom: 1.4rem; }
+.info-item:last-child { margin-bottom: 0; }
+.info-item .info-label {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.35rem;
+}
+.info-item a,
+.info-item p {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.5;
+}
+.info-item a:hover { color: var(--accent); }
+
+@media (max-width: 820px) {
+  .contact-layout { grid-template-columns: 1fr; gap: 2.2rem; }
+}
+@media (max-width: 540px) {
+  .form-row { grid-template-columns: 1fr; }
+}

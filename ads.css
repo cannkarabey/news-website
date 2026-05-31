@@ -116,7 +116,11 @@ body.no-ads .ad-inline { display: none !important; }
 .ad-sidebar-left  { left: 14px; }
 .ad-sidebar-right { right: 14px; }
 
-@media (min-width: 1440px) { .ad-sidebar { display: block; } }
+/* Yan banner'lar yalnızca içerik kolonunu (max 1200px) örtmeyecek kadar
+   geniş ekranlarda gösterilir. 1200 + 2×(145 banner + 14 kenar + 20 boşluk)
+   ≈ 1558px → güvenli eşik 1560px. Böylece reklam geldiğinde kenardaki
+   görüntüleri/metni kapatmaz. */
+@media (min-width: 1560px) { .ad-sidebar { display: block; } }
 
 .ad-sidebar > .ad-close-btn {
   top: -9px; right: -9px;

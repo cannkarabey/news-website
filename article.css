@@ -98,6 +98,25 @@
   color: var(--black);
 }
 
+/* ── Makale içi görseller ── */
+.article-figure {
+  margin: 2.5rem 0;
+}
+.article-figure img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+.article-figure figcaption {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 0.7rem;
+  line-height: 1.5;
+  font-style: italic;
+}
+
 /* ── Related articles ── */
 .related-section {
   background: var(--off-white);

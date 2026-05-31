@@ -20,6 +20,7 @@ window.KESF_DATA = {
       img: 'https://picsum.photos/seed/vogue1700/1200/600',
       body: [
         '2025 İlkbahar-Yaz sezonu, Milano Moda Haftası\'nı hem estetik hem de felsefi açıdan yeniden tanımladı. Bu sezonun ortak teması tek bir sözcükle özetlenebilir: kontrollü kaos. Büyük moda evleri geometrik kesimlerle organik dokuları bir araya getirirken sonuç hem sert hem de akışkan bir estetik oldu. Podyumlarda beden hatlarını silen siluetler ile vücuda yapışan minimal kesimler şaşırtıcı bir uyum içinde dans etti.',
+        { img: 'https://picsum.photos/seed/vogue1701/1000/560', caption: 'Milano podyumlarında bu sezon öne çıkan minimalist siluetler.' },
         'Sürdürülebilirlik bu sezonda yalnızca bir slogan değil, tasarımın ayrılmaz bir parçasıydı. Geri dönüştürülmüş kumaşlar ve sıfır atık üretim yöntemleri podyumda kendine yer bulurken lüks anlayışı da evrildi: artık en pahalı malzemeyi kullanmak değil, en az iz bırakacak biçimde üretmek ayrıcalık göstergesi sayılıyor. Bu yaklaşım, marka sadakatini de yeniden şekillendiriyor.',
         'Renk paletinde ise sürpriz bir geri dönüş yaşandı: ham keten tonları ve toprak renkleri, ani flaş neon detaylarla yan yana geldi. Bu cesur kontrast, sezonu son yılların en tartışmalı ve en çok konuşulan koleksiyonlarından biri yaptı. Kritikler görüş ayrılığı içinde olsa da piyasanın tepkisi netti — ön sipariş rakamları rekor kırdı.'
       ]
@@ -36,6 +37,7 @@ window.KESF_DATA = {
       img: 'https://picsum.photos/seed/food1500/1200/600',
       body: [
         'İstanbul\'un gastronomi sahnesi son beş yılda köklü bir dönüşüm geçirdi. Michelin rehberinin şehre ilk kez bakışını çevirmesiyle birlikte genç Türk şefler, dünya standartlarını yerel malzeme zenginliğiyle harmanlama konusundaki kararlılıklarını kanıtladı. Bu yıl açılan on yeni restoranın yarısı dünya mutfak medyasında yer buldu; bu bir tesadüf değil, sistematik bir bilinç inşasının ürünü.',
+        { img: 'https://picsum.photos/seed/food1501/1000/560', caption: 'Boğaz kıyısındaki yeni nesil restoranlar dünya mutfak medyasının ilgisini çekiyor.' },
         'Kapalıçarşı\'nın gölgesinden Boğaz kıyısındaki teraslara uzanan bu gastronomi haritası artık tek bir tarzla tanımlanamıyor. Anadolu\'nun kadim lezzetleri Japon umami anlayışıyla, İskandinav minimalizmi ise Orta Doğu baharatlarıyla buluşuyor. Ortaya çıkan dil özgün ve iddialı; misafir profilini de dönüştürüyor: artık şehre sırf bir restoran için gelen yabancı turistler var.',
         'Uzmanlar bu yükselişin sürdürülebilir olduğunu vurguluyor. Çünkü şehrin gastronomi ekosistemi artık yalnızca restoran sayısıyla değil; üretici-şef ilişkileri, yerel tohum bankaları ve çiftlikten sofraya hareketinin derinliğiyle ölçülüyor. Bu altyapı güçlendikçe İstanbul\'un küresel gastronomideki payı da büyümeye devam edecek.'
       ]
@@ -133,6 +135,7 @@ window.KESF_DATA = {
       img: 'https://picsum.photos/seed/f1race1/1200/600',
       body: [
         '2026 teknik düzenlemeleriyle Formula 1 tarihinin en köklü dönüşümü yaşanıyor. Yeni güç ünitesi standartları, içten yanmalı motor çıkışını önemli ölçüde azaltırken elektrik motorunun katkı payını yaklaşık yüzde elli oranında artırıyor. Bu değişim yalnızca teknik bir evrim değil; sporun kimliğini, sesini ve hatta koku kimliğini yeniden yazıyor.',
+        { img: 'https://picsum.photos/seed/f1race2/1000/560', caption: '2026 düzenlemeleri elektrik motorunun katkı payını yüzde elli artırıyor.' },
         'Takımlar bu geçişe birbirinden farklı hazırlık süreçleriyle girdi. Bazı büyük takımlar yeni güç ünitesine uygun şasi mimarisini çoktan teslim ederken bazıları hâlâ simülasyon aşamasında. Bu dengesizlik 2026 sezonunu öngörülemez kılıyor; sporun tarihinde ilk kez bir sezon başlamadan "her şey sıfırlanıyor" söylemi bu denli gerçekçi görünüyor.',
         'Taraftarlar açısından en büyük soru ise performans hiyerarşisinin nasıl şekilleneceği. Geçmiş düzenleme değişikliklerinde dominant olan takımlar avantajlarını korumuştu; ancak bu kez elektrik mühendisliğinin ağırlığı arttıkça geleneksel güç dengelerinin sarsılabileceği değerlendiriliyor. Bazı analistler, 2026\'nın yeni bir "şampiyonluk hanedanlığı"nın başlangıcı olacağını öne sürüyor.'
       ]
@@ -230,6 +233,7 @@ window.KESF_DATA = {
       img: 'https://picsum.photos/seed/artworld1/1200/600',
       body: [
         'Küresel çağdaş sanat haritası her geçen sezon yeniden çiziliyor; bu yıl en çok konuşulan mekânlar öngörülemeyen yerlerden çıktı. Paris\'in köklü müzeleri beklendiği gibi öne çıkarken asıl sürprizi genişleme sürecindeki ikincil şehirler yarattı. Lyon, Porto ve Vilnius gibi şehirler, müze başına düşen uluslararası ziyaretçi sayısı bakımından Avrupa ortalamasını geride bıraktı.',
+        { img: 'https://picsum.photos/seed/artworld2/1000/560', caption: 'Lyon, Porto ve Vilnius bu sezon küresel sanat sahnesinin sürpriz durakları oldu.' },
         'Asya\'da ise Tokyo\'nun sanat ekosistemi olgunlaşmaya devam ederken Seoul kendine özgü bir dil geliştiriyor. K-pop kültürünün yaratıcı ekonomiye katkısı artık yalnızca müzikle sınırlı değil; çağdaş sanat galerileri bu dalganın üzerinde yükselerek küresel koleksiyonerleri çekiyor. Güney Kore\'nin sanat ihracatı son beş yılda dört katına çıktı.',
         'Türkiye bu küresel haritada giderek daha görünür bir yer edinmekte. İstanbul\'un bienal geleneği uluslararası sanat dünyasında ciddiye alınan bir platform olma yolunda. Öte yandan Ankara ve İzmir\'de açılan yeni çağdaş sanat mekânları, başkentin ve Ege\'nin yaratıcı enerjisini ulusal gündemin merkezine taşıyor.'
       ]
@@ -327,6 +331,7 @@ window.KESF_DATA = {
       img: 'https://picsum.photos/seed/luxeco1/1200/600',
       body: [
         'Küresel lüks piyasası yeniden tanımlanıyor. Geleneksel anlamda lüks tüketim bireysel haz almakla ilgiliydi; yeni paradigma ise bu hazzı yatırım getirisiyle harmanlıyor. Sanat eserleri, nadir saatler, limited edition modeli arabalar ve kıdemli viski koleksiyonları artık yalnızca prestij değil, portföy çeşitlendirme araçları olarak değerlendiriliyor.',
+        { img: 'https://picsum.photos/seed/luxeco2/1000/560', caption: 'Sanat eserleri ve nadir koleksiyonlar portföy çeşitlendirme aracına dönüşüyor.' },
         'Rakamlar bu dönüşümü doğruluyor. Knight Frank\'in Lüks Yatırım Endeksi, son on yılda koleksiyonluk arabaların yüzde yüz yirmi, ince şarabın yüzde yüz on ve nadir viski koleksiyonlarının yüzde üç yüzün üzerinde değer kazandığını gösteriyor. Özellikle pandemi sonrası dönemde bu varlık sınıfına giriş yapan yeni zenginlerin sayısı dikkat çekici biçimde arttı.',
         'Türkiye\'de bu trendin yansımaları çeşitli biçimlerde görülüyor. İstanbul\'daki müzayede evlerinin cirosu son iki yılda iki katına çıkarken sanat danışmanlığı sektörü sessiz sedasız kurumsallaşıyor. Mücevher yatırımı ise özellikle doğal taşlar söz konusu olduğunda bireysel yatırımcıların listelerindeki yerini sağlamlaştırdı.'
       ]
