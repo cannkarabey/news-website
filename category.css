@@ -1,0 +1,95 @@
+/* category.css — Category page extras */
+
+.header-link { display: block; }
+
+/* ── Category Hero ── */
+.cat-hero {
+  background: var(--black);
+  padding: 3.5rem 0 2.75rem;
+  border-bottom: 3px solid var(--accent);
+}
+.cat-label {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--accent-alt);
+  margin-bottom: 0.6rem;
+}
+.cat-name {
+  font-family: var(--serif);
+  font-size: clamp(2.25rem, 6vw, 4.5rem);
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 0.06em;
+}
+
+/* ── Articles section ── */
+.cat-section {
+  background: var(--off-white);
+  padding: 4rem 0;
+}
+
+.cat-section-title {
+  font-family: var(--serif);
+  font-size: clamp(1.1rem, 2vw, 1.45rem);
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  color: var(--black);
+  margin-bottom: 2rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 2px solid var(--black);
+}
+
+/* 3-column grid for 6 articles */
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.cat-card .card-image { height: 230px; }
+
+/* First card spans full width as a feature */
+.cat-card:first-child {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 55% 1fr;
+}
+.cat-card:first-child .card-image {
+  height: 340px;
+}
+.cat-card:first-child .card-title {
+  font-size: 1.6rem;
+}
+
+/* Back-to-home link */
+.cat-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 2rem;
+  transition: color var(--ease);
+}
+.cat-back:hover { color: var(--accent); }
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .cat-grid { grid-template-columns: repeat(2, 1fr); }
+  .cat-card:first-child {
+    grid-column: 1 / -1;
+    grid-template-columns: 1fr;
+  }
+  .cat-card:first-child .card-image { height: 260px; }
+}
+
+@media (max-width: 580px) {
+  .cat-grid { grid-template-columns: 1fr; }
+  .cat-card:first-child { grid-template-columns: 1fr; }
+}
