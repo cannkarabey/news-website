@@ -116,11 +116,28 @@ body.no-ads .ad-inline { display: none !important; }
 .ad-sidebar-left  { left: 14px; }
 .ad-sidebar-right { right: 14px; }
 
-/* Yan banner'lar yalnızca içerik kolonunu (max 1200px) örtmeyecek kadar
-   geniş ekranlarda gösterilir. 1200 + 2×(145 banner + 14 kenar + 20 boşluk)
-   ≈ 1558px → güvenli eşik 1560px. Böylece reklam geldiğinde kenardaki
-   görüntüleri/metni kapatmaz. */
-@media (min-width: 1560px) { .ad-sidebar { display: block; } }
+/* ──────────────────────────────────────────────────────────
+   Reklamlı modda site daraltma
+   ──────────────────────────────────────────────────────────
+   Geniş ekranlarda (≥1200px) yan reklamlar köşelere sabitlenir
+   ve tüm site içeriği sağdan/soldan --ad-gutter kadar daraltılır.
+   Böylece reklamlar kenarda dururken siteyi örtmez, genel görünüm
+   reklama göre küçülür. Reklamsız modda (.no-ads) gutter sıfırlanır
+   ve site mevcut tam genişliğinde kalır.
+   gutter (175px) > banner (145) + kenar (14) → ~16px güvenli boşluk. */
+@media (min-width: 1200px) {
+  body {
+    padding-left: var(--ad-gutter, 175px);
+    padding-right: var(--ad-gutter, 175px);
+    transition: padding .3s ease;
+  }
+  html.no-ads body,
+  body.no-ads {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .ad-sidebar { display: block; }
+}
 
 .ad-sidebar > .ad-close-btn {
   top: -9px; right: -9px;

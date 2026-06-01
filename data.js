@@ -11,7 +11,7 @@ window.KESF_DATA = {
     /* ── Gündem ── */
     'milano-moda': {
       id: 'milano-moda',
-      catKey: 'gundem',
+      catKey: 'moda',
       cat: 'Moda',
       date: '10 Mayıs 2025',
       readMin: 4,
@@ -420,7 +420,7 @@ window.KESF_DATA = {
     /* ── YENİ HABERLER (Mayıs 2026) ── */
     'gardirop-detoksu': {
       id: 'gardirop-detoksu',
-      catKey: 'gundem',
+      catKey: 'moda',
       cat: 'Moda',
       date: '20 Mayıs 2026',
       readMin: 3,
@@ -503,7 +503,11 @@ window.KESF_DATA = {
   categories: {
     gundem: {
       name: 'Gündem',
-      articles: ['evde-kahve', 'gardirop-detoksu', 'istanbul-gastronomi', 'milano-moda', 'teknoloji-zirvesi', 'yesil-mimari', 'kultur-sanat-sezon', 'bogaz-kopru', 'edevlet-dijital']
+      articles: ['evde-kahve', 'istanbul-gastronomi', 'teknoloji-zirvesi', 'yesil-mimari', 'kultur-sanat-sezon', 'bogaz-kopru', 'edevlet-dijital']
+    },
+    moda: {
+      name: 'Moda',
+      articles: ['milano-moda', 'gardirop-detoksu']
     },
     spor: {
       name: 'Spor',
